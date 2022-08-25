@@ -82,9 +82,24 @@ for (let i = 0; suscripcion.length > i ;i++) {
   }
 }
 
-//Esta es otra forma de hacer el ejercicio condicionales(3)
+//Esta es otra forma de hacer el ejercicio condicionales(3) mas sencilla
 
+const suscripciones = {
+  Free: "Solo puedes tomar los cursos gratis",
+  Basic: "Puedes tomar casi todos los cursos de Platzi durante un mes",
+  Expert: "Puedes tomar casi todos los cursos de Platzi durante un año",
+  ExpertPlus: "Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año",
+}
 
+function tipoDeSuscripcion (suscripcion) {
+  if (suscripciones[suscripcion]) {
+    console.log(suscripciones[suscripcion]);
+  } else {
+    console.warn("Este tipo de suscripcion no existe");
+  }
+}
+
+tipoDeSuscripcion("Free");
 
 //Ciclos(2) Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
 for (let i = 0; i < 5; i++) {
